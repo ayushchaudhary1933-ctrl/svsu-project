@@ -1,0 +1,414 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SVSU Project | Student Project Portal</title>
+
+<style>
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f3f6fc;
+    color: #172033;
+    line-height: 1.6;
+}
+
+nav {
+    background: #101d42;
+    color: white;
+    padding: 17px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #73b7ff;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 9px;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: #73b7ff;
+}
+
+.hero {
+    background: linear-gradient(135deg, #101d42, #2358a9);
+    color: white;
+    padding: 85px 8%;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: clamp(34px, 5vw, 55px);
+    margin: 0 0 15px;
+}
+
+.hero p {
+    max-width: 650px;
+    margin: 0 auto 25px;
+    color: #dce9ff;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 23px;
+    background: #3284f4;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #1764ce;
+}
+
+.btn-light {
+    background: white;
+    color: #18376e;
+}
+
+.container {
+    max-width: 1100px;
+    padding: 25px;
+    margin: auto;
+}
+
+.section-title {
+    text-align: center;
+    margin: 35px 0;
+}
+
+.section-title h2 {
+    font-size: 30px;
+    margin-bottom: 8px;
+    color: #172b59;
+}
+
+.section-title p {
+    color: #68758b;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 5px 22px #1725540d;
+    border: 1px solid #e4eaf5;
+}
+
+.card .symbol {
+    font-size: 30px;
+}
+
+.card h3 {
+    color: #204c99;
+}
+
+.panel {
+    background: white;
+    padding: 30px;
+    border-radius: 14px;
+    border: 1px solid #e0e7f2;
+    box-shadow: 0 5px 25px #1725540d;
+    max-width: 800px;
+    margin: 25px auto;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin: 15px 0 6px;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccd5e5;
+    border-radius: 7px;
+    font: inherit;
+    background: #fff;
+}
+
+input:focus, select:focus, textarea:focus {
+    outline: 2px solid #8bbaff;
+    border-color: #3284f4;
+}
+
+textarea {
+    min-height: 110px;
+    resize: vertical;
+}
+
+.note {
+    color: #68758b;
+    font-size: 13px;
+}
+
+.about-box {
+    background: #e6efff;
+    padding: 25px;
+    border-radius: 12px;
+}
+
+.contact-link {
+    color: #205bc0;
+    overflow-wrap: anywhere;
+}
+
+footer {
+    background: #101d42;
+    color: white;
+    text-align: center;
+    padding: 28px 15px;
+    margin-top: 40px;
+}
+
+footer a {
+    color: #93c5fd;
+}
+
+@media (max-width: 600px) {
+    nav {
+        justify-content: center;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 5px;
+    }
+
+    .hero {
+        padding: 60px 20px;
+    }
+
+    .container {
+        padding: 16px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <div class="logo">SVSU PROJECT</div>
+    <div>
+        <a href="#home">Home</a>
+        <a href="#features">Features</a>
+        <a href="#submit">Submit Project</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </div>
+</nav>
+
+<header class="hero" id="home">
+    <h1>SVSU Project Portal</h1>
+    <p>
+        A student-focused platform to present academic projects,
+        share ideas, and encourage innovation and creativity.
+    </p>
+    <a href="#submit" class="btn btn-light">Submit Your Project →</a>
+</header>
+
+<main class="container">
+
+    <div class="section-title" id="features">
+        <h2>Welcome to SVSU Project</h2>
+        <p>A digital space for student innovation and academic work.</p>
+    </div>
+
+    <div class="cards">
+        <div class="card">
+            <div class="symbol">📁</div>
+            <h3>Project Submission</h3>
+            <p>Prepare your project details and select your project file.</p>
+            <a href="#submit" class="contact-link">Submit a project →</a>
+        </div>
+
+        <div class="card">
+            <div class="symbol">🎓</div>
+            <h3>For Students</h3>
+            <p>Organize academic work and showcase your learning and ideas.</p>
+        </div>
+
+        <div class="card">
+            <div class="symbol">💡</div>
+            <h3>Innovation</h3>
+            <p>Encourage creativity, technical learning, and collaboration.</p>
+        </div>
+    </div>
+
+    <section id="submit">
+        <div class="section-title">
+            <h2>Submit Your Project</h2>
+            <p>Enter your project information below.</p>
+        </div>
+
+        <div class="panel">
+            <form id="projectForm">
+
+                <label for="student">Student Name *</label>
+                <input id="student" name="student"
+                       placeholder="Enter your full name" required>
+
+                <label for="enrollment">Enrollment Number *</label>
+                <input id="enrollment" name="enrollment"
+                       placeholder="Enter enrollment number" required>
+
+                <label for="course">Course / Department *</label>
+                <input id="course" name="course"
+                       placeholder="e.g. BCA, B.Tech, BBA" required>
+
+                <label for="title">Project Title *</label>
+                <input id="title" name="title"
+                       placeholder="Enter your project title" required>
+
+                <label for="category">Project Category *</label>
+                <select id="category" name="category" required>
+                    <option value="">Choose category</option>
+                    <option>Web Development</option>
+                    <option>Software Development</option>
+                    <option>Artificial Intelligence</option>
+                    <option>Data Science</option>
+                    <option>Research Project</option>
+                    <option>Other</option>
+                </select>
+
+                <label for="description">Project Description *</label>
+                <textarea id="description" name="description"
+                          placeholder="Describe your project and its purpose"
+                          required></textarea>
+
+                <label for="projectFile">Select Project File *</label>
+                <input type="file" id="projectFile" name="projectFile"
+                       accept=".pdf,.doc,.docx,.ppt,.pptx,.zip"
+                       required>
+                <p class="note">
+                    Select a PDF, Word document, PowerPoint, or ZIP file.
+                    File upload is not sent to a server by this demo.
+                </p>
+
+                <button class="btn" type="submit">
+                    Prepare Submission
+                </button>
+
+                <p id="formMessage" role="status"></p>
+            </form>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="section-title">
+            <h2>About This Website</h2>
+            <p>Learn about the purpose of the SVSU Project Portal.</p>
+        </div>
+
+        <div class="about-box">
+            <h3>Our Purpose</h3>
+            <p>
+                SVSU Project is a student-focused website concept
+                designed to provide an organized place for academic
+                project information and project submission.
+                Its goal is to encourage digital learning,
+                creativity, and student innovation.
+            </p>
+
+            <h3>About the Project</h3>
+            <p>
+                This website is created using HTML, CSS, and JavaScript
+                as a web development project. The submission form
+                currently demonstrates the user interface only.
+            </p>
+
+            <p><strong>Website name:</strong> SVSU Project</p>
+            <p><strong>Created on:</strong> 15 October 2026</p>
+            <p><strong>Technology:</strong> HTML, CSS and JavaScript</p>
+            <p><strong>Status:</strong> Front-end demonstration</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="section-title">
+            <h2>Contact Us</h2>
+            <p>Connect with the SVSU Project team.</p>
+        </div>
+
+        <div class="cards">
+            <div class="card">
+                <h3>📧 Email</h3>
+                <p>For questions and project-related enquiries.</p>
+                <a class="contact-link"
+                   href="mailto:YOUR_EMAIL@example.com">
+                   YOUR_EMAIL@example.com
+                </a>
+            </div>
+
+            <div class="card">
+                <h3>📱 Instagram</h3>
+                <p>Follow our project page for updates.</p>
+                <a class="contact-link"
+                   href="https://www.instagram.com/YOUR_INSTAGRAM/"
+                   target="_blank" rel="noopener">
+                   @YOUR_INSTAGRAM
+                </a>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    <p>© 2026 SVSU Project Portal</p>
+    <p>Designed for student learning and innovation.</p>
+    <p><a href="#home">Back to top ↑</a></p>
+</footer>
+
+<script>
+document.getElementById("projectForm").addEventListener("submit",
+    function(event) {
+        event.preventDefault();
+
+        const file = document.getElementById("projectFile").files[0];
+
+        if (!file) {
+            document.getElementById("formMessage").textContent =
+                "Please select your project file.";
+            return;
+        }
+
+        document.getElementById("formMessage").textContent =
+            "Demo only: your details were checked in this browser, " +
+            "but nothing was uploaded or saved. A backend is needed " +
+            "to receive actual project submissions.";
+    }
+);
+</script>
+
+</body>
+</html>
